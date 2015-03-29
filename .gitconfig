@@ -1,0 +1,17 @@
+[core]
+	user = Zach Graves
+	email = zagraves@gmail.com
+	ditor = /usr/bin/vim
+ 	quotepath = off
+[user]
+	name = Zach Graves
+	email = zagraves@gmail.com
+[merge]
+	tool = vimdiff
+[alias]
+	unstage = reset HEAD --
+	co = checkout
+[color]
+	ui = auto
+[commit]
+  template = ~/.gitmessage
