@@ -12,13 +12,14 @@ syntax on                   " syntax highlighting
 set encoding=utf-8
 scriptencoding utf-8
 
-" RSpec.vim mappings
-map <Leader>t :call RunCurrentSpecFile()<CR>
-map <Leader>s :call RunNearestSpec()<CR>
-map <Leader>l :call RunLastSpec()<CR>
-map <Leader>a :call RunAllSpecs()<CR>
-let g:rspec_command = "!bundle exec rspec {spec}"
-let g:rspec_runner = "os_x_iterm"
+let g:spec_runner_dispatcher = 'call VtrSendCommand("be {command}")'
+map <leader>t <plug>RunCurrentSpecFile
+map <leader>s <plug>RunFocusedSpec
+map <leader>l <plug>RunMostRecentSpec
+
+" VtrRunner
+nmap <leader>p :VtrKillRunner<CR>
+nmap <leader>o :VtrOpenRunner({'percentage': 20})<CR>
 
 " airline
 set laststatus=2
