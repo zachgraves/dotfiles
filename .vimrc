@@ -30,6 +30,9 @@ let g:ackprg = 'ag --nogroup --nocolor --column'
 " ctrlp ignore
 let g:ctrlp_custom_ignore = "node_modules\|DS_Store\|git"
 
+" clear before running specs
+let g:VtrClearSequence = "clear\r"
+
 " Make splits a bit more managable.
 nnoremap <leader>1 :vs<CR><C-w>l
 nnoremap <leader>2 :split<CR><C-w>j
