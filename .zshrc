@@ -85,18 +85,6 @@ BASE16_SHELL="$HOME/.config/base16-shell/base16-$BASE16_SCHEME.dark.sh"
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
 # For a full list of active aliases, run `alias`.
 
-alias ggpull='git pull origin $(current_branch)'
-compdef ggpull=git
-
-alias ggpush='git push origin $(current_branch)'
-compdef ggpush=git
-
-alias ggpur='git pull --rebase origin $(current_branch)'
-compdef ggpur=git
-
-alias ggpnp='git pull origin $(current_branch) && git push origin $(current_branch)'
-compdef ggpnp=git
-
 export PATH=/Applications/Postgres.app/Contents/Versions/9.4/bin:$PATH
 
 #
