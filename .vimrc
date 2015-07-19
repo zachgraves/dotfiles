@@ -28,7 +28,8 @@ set laststatus=2
 let g:ackprg = 'ag --nogroup --nocolor --column'
 
 " ctrlp ignore
-let g:ctrlp_custom_ignore = "node_modules\|DS_Store\|git"
+" let g:ctrlp_custom_ignore = "node_modules\|DS_Store\|git"
+let g:ctrlp_custom_ignore = '\v[\/](node_modules|DS_Store)|(\.(swp|ico|git))$'
 
 " clear before running specs
 let g:VtrClearSequence = "clear\r"
