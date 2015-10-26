@@ -3,7 +3,6 @@ export ZSH=$HOME/.oh-my-zsh
 
 stty -ixon
 
-
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
@@ -92,5 +91,3 @@ export PATH=/Applications/Postgres.app/Contents/Versions/9.4/bin:$PATH
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 eval "$(rbenv init -)"
-
-
